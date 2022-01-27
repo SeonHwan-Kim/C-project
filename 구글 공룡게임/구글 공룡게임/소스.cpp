@@ -226,7 +226,7 @@ void Gameover(int score, int random) {
 void ExRe(int score, int random) {
     int a;
     Gameover(score, random);
-    scanf_s("%d", &a);
+    scanf("%d", &a);
     DrawDino(DINO_BOTTOM_Y);
     if (a == 1) {
         

@@ -5,7 +5,7 @@ void check(int a[6], int b[][6], int c)
 {
 	for (int i = 0; i < 5; i++)
 	{
-		printf("%dì„¸íŠ¸ ë²ˆí˜¸<%d %d %d %d %d %d>", i + 1, b[i][0], b[i][1], b[i][2], b[i][3], b[i][4], b[i][5]);
+		printf("%d¼¼Æ® ¹øÈ£<%d %d %d %d %d %d>", i + 1, b[i][0], b[i][1], b[i][2], b[i][3], b[i][4], b[i][5]);
 		int sum = 0;
 		for (int j = 0; j < 6; j++)
 		{
@@ -25,17 +25,17 @@ void check(int a[6], int b[][6], int c)
 			sum++;
 		}
 		if (sum == 0)
-			printf("1ë“±");
+			printf("1µî");
 		else if (sum == 1)
-			printf("3ë“±");
+			printf("3µî");
 		else if (sum == 2)
-			printf("2ë“±");
+			printf("2µî");
 		else if (sum == 3)
-			printf("4ë“±");
+			printf("4µî");
 		else if (sum == 4)
-			printf("5ë“±");
+			printf("5µî");
 		else
-			printf("ê½");
+			printf("²Î");
 		printf("\n");
 	}
 
@@ -74,10 +74,10 @@ int main(void)
 		}
 	}
 	Sorting(b);
-	printf("ê¸ˆì£¼ì˜ ë¡œë˜ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” -> ");
-	scanf_s("%d%d%d%d%d%d", &a[0], &a[1], &a[2], &a[3], &a[4], &a[5]);
-	printf("ë³´ë„ˆìŠ¤ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” -> ");
-	scanf_s("%d", &a[6]);
+	printf("±ÝÁÖÀÇ ·Î¶Ç ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä -> ");
+	scanf("%d%d%d%d%d%d", &a[0], &a[1], &a[2], &a[3], &a[4], &a[5]);
+	printf("º¸³Ê½º ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä -> ");
+	scanf("%d", &a[6]);
 	check(a, b, 6);
 	return 0;
 }
