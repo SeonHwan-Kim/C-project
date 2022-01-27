@@ -75,9 +75,9 @@ int main(void)
 	}
 	Sorting(b);
 	printf("금주의 로또 번호를 입력하세요 -> ");
-	scanf_s("%d%d%d%d%d%d", &a[0], &a[1], &a[2], &a[3], &a[4], &a[5]);
+	scanf("%d%d%d%d%d%d", &a[0], &a[1], &a[2], &a[3], &a[4], &a[5]);
 	printf("보너스 번호를 입력하세요 -> ");
-	scanf_s("%d", &a[6]);
+	scanf("%d", &a[6]);
 	check(a, b, 6);
 	return 0;
 }
